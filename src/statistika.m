@@ -8,7 +8,7 @@ timesCustom = zeros(1,1000);
 timesOpenCV = zeros(1,1000);
 for i=1:1000 % test 1000 krat
     tic
-    corners = getBestFeatures(original, 100, 5);
+    corners = shiTomasiFeatures(original, 5);
     sc = corners.selectStrongest(15);
     timesCustom(i) = toc;
     
