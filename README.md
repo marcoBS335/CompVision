@@ -55,7 +55,7 @@ Pri meraní trvania priebehu našej funkcie a funkcie OpenCV pri 1000 behoch sme
 Na základe fotiek koľajníc boli pomocou Shi-Tomasi a Harris-Stephen detektorov zisťované nebezpečné časti železničných tratí, konkrétne poškodené alebo chýbajúce úchyty koľají. [3]
 
 
-[Dokumentácia](https://drive.google.com/file/d/1f_6t_V-rZZz2q8W3lZLELPyGGzMkxtp0/view?usp=sharing)
+[Dokumentácia vo forme PDF](https://github.com/marcoBS335/CompVision/blob/master/documentation.pdf)
 
 ### Pseudocode
 
