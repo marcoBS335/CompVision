@@ -29,7 +29,7 @@ Základný princíp algoritmu je:
 * podľa zvoleného thresholdu sú označené nájdené rohy
 
 Tento princíp sme následne implementovali s ohľadom na efektivitu našej funkcie. Pre optimálnejšie spracovanie obrazu sme najprv farebný obraz previedli na šedotónový, pridali sme obrazu orámovanie a použili sme gausovský filter pre odstránenie šumu.
-# Implementácia algoritmu
+### Implementácia algoritmu
 V programovom prostredí MATLAB shiTomasiFeatures(), ktorej vstupom sú 3 parametre, pričom iba prvý z nich je povinný a to obraz ktorý sa spracováva. Druhým parametrom je veľkosť filtra, ktorým je obraz prehľadávaný a tretím je threshold, ktorý určuje akú najnižšiu hodnotu vypočítanej metriky musí mať bod obrazu aby mohol byť považovaný za roh.
 
 Funkcia vráti rohy ktoré pozície nájdených rohov a k nim prislúchajúce hodnoty metriky.
@@ -41,7 +41,7 @@ Pri porovnávaní zistených rohov sme vyberali 79 rohov s najlepšou metrikou. 
 Pri meraní trvania priebehu našej funkcie a funkcie OpenCV pri 1000 behoch sme dostali priemer trvania behu nami naprogramovanej funkcie je 0,20993s a priemerné trvanie behu OpenCV funkcie je 0,13657.
 
 
-# Príklady aplikácií
+### Príklady aplikácií
 
 * Rozpoznávanie únavy vodičov na základe charakteristických bodov tváre
 * Na rozpoznanie únavy vodičov bola použitá metóda rozpoznávania tvárí Viola-Jones, ktorá využívala metódu rozpoznávania rohov Shi-Tomasi  na uršenie pozícií úst a očí vodičov. [1]
@@ -51,11 +51,11 @@ Pri meraní trvania priebehu našej funkcie a funkcie OpenCV pri 1000 behoch sme
  
 Na základe fotiek koľajníc boli pomocou Shi-Tomasi a Harris-Stephen detektorov zisťované nebezpečné časti železničných tratí, konkrétne poškodené alebo chýbajúce úchyty koľají. [3]
 
+```
+	https://drive.google.com/file/d/1f_6t_V-rZZz2q8W3lZLELPyGGzMkxtp0/view?usp=sharing
+```
 
-
-https://drive.google.com/file/d/1f_6t_V-rZZz2q8W3lZLELPyGGzMkxtp0/view?usp=sharing
-
-# Pseudocode
+### Pseudocode
 
 ```javascript
 read image
@@ -68,7 +68,7 @@ if (pixel is local maxima and also satisfies metric){
 }
 return pixel positions and its metric
 ```
-# Citations
+### Citations
 1. Driver alert state and fatigue detection by salient points analysis. Torres-Torriti, J. Jiménez-Pinto and M. San Antonio : s.n., 2009.
 2. Heng Du, TszHang To. Hand Gesture Rrecognition Using Kinect. s.l. : Boston University, 2011.
 3. Automatic detection of defective rail anchors. R. A. Khan, S. Islam and R. Biswas. Quingdao : s.n., 2014.
