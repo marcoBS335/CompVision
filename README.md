@@ -9,6 +9,7 @@ Technická univerzita v Košiciach, KKUI
  
 Teória a algoritmus
 Shi-Tomasi detektor vychádza z algoritmu, ktorý sa používa v metóde Harris Corner. Harris Corner algoritmus vychádza zo zmeny gradientu na šedotónovom obrázku, ktorá je vyjadrená nasledujúcim vzťahom:
+
 ![prva rovnica](https://github.com/marcoBS335/CompVision/blob/master/images/prva_rov.jpg?raw=true)
 
 Kde :
@@ -17,9 +18,11 @@ Kde :
 
 
 V roku 1994 J. Shi a C. Tomasi urobili malú modifikáciu vo svojom dokumente Good Features to Track, ktorý vykazuje lepšie výsledky v porovnaní s Harris Corner Detector. Funkcia bodovania v detektore Harris Corner Detector bola daná vzťahom, ktorý vyjadruje skóre pre každú časť obrázka, ktorá by mohla obsahovať roh:
+
 ![druha rovnica](https://github.com/marcoBS335/CompVision/blob/master/images/druha_rov.jpg?raw=true)
 
 Namiesto vzťahu ( 2 ) Shi-Tomasi navrhol:
+
 ![tretia rovnica](https://github.com/marcoBS335/CompVision/blob/master/images/tretia_rov.jpg?raw=true)
 
 Kde λ_1 a λ_2 sú vlastné hodnoty matice zloženej z gradientových intenzít ( 1 ).
