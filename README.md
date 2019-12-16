@@ -38,11 +38,15 @@ V programovom prostredí MATLAB shiTomasiFeatures(), ktorej vstupom sú 3 parame
 Funkcia vráti rohy ktoré pozície nájdených rohov a k nim prislúchajúce hodnoty metriky.
 
 Experimentálne sme porovnávali nami vytvorenú funkciu a funkciu OpenCV. 
- 
+
+![tab](https://github.com/marcoBS335/CompVision/blob/master/images/tab.jpg?raw=true)
+
+![graf](https://github.com/marcoBS335/CompVision/blob/master/images/histogram.jpg?raw=true)
 
 Pri porovnávaní zistených rohov sme vyberali 79 rohov s najlepšou metrikou. Priemerne bolo zhodných 58 zo 79 rohov a priemerná úspešnosť teda bola 73,4%. Pri experimentoch bola veľkosť filtra nastavená na hodnotu 5 a threshold mal hodnotu 100. Porovnávanie funkcií sme uskutočnili pomocu štyroch obrázkov. Pre ilustráciu porovnania funkcií sme priložili obrázky kirby.jpg a stavebnica.jpg s označenými rohmi, získanými pomocou oboch funkcií.
 Pri meraní trvania priebehu našej funkcie a funkcie OpenCV pri 1000 behoch sme dostali priemer trvania behu nami naprogramovanej funkcie je 0,20993s a priemerné trvanie behu OpenCV funkcie je 0,13657.
 
+![vysledok](https://github.com/marcoBS335/CompVision/blob/master/images/stavebnica_output.jpg?raw=true)
 
 ### Príklady aplikácií
 
